@@ -1,0 +1,17 @@
+<div class="container">
+
+    <h1 class="text-center">Personajes de Rick and Morty</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let character of characters">
+            <div class="card">
+                <img [src]="character.image" class="card-img-top" alt="{{ character.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ character.name }} </h5>
+                    <p class="card-text">{{ character.species }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
